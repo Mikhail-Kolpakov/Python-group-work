@@ -35,7 +35,7 @@ try:
         json_data = json.load(json_file)
         
     # Додаємо нові дані
-    json_data.append({"Ім'я": "Пось", "Прізвище": "Назарій", "Вік": 18, "День народження": "10.04.2005"})
+    json_data.append({"Ім'я": "Назарій", "Прізвище": "Пось", "Вік": 18, "День народження": "10.04.2005"})
     
     # Запис у csv файл
     with open(csv_filename, 'w', newline = '', encoding = 'utf-8') as csv_file:
