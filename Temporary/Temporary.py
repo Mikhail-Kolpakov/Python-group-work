@@ -49,14 +49,14 @@ except Exception as e:
 
 # Початок частини Гордієнка Сергія
 try:
-    # Читання .csv файлу
+    # Читання csv файлу
     with open(csv_filename, 'r', encoding = 'utf-8') as csv_file:
         csv_data = list(csv.DictReader(csv_file))
 
     # Додаємо нові дані
     csv_data.append({"Ім'я": "Сергій", "Прізвище": "Гордієнко", "Вік": 18, "День народження": "--.--.----"})
 
-    # Запис у .json файл
+    # Запис у json файл
     with open(json_filename, 'w', encoding='utf-8') as json_file:
         json.dump(csv_data, json_file, ensure_ascii = False, indent = 2)
 
@@ -85,14 +85,14 @@ except Exception as e:
 
 # Початок частини Зуєвої Євгенії
 try:
-    # Читання .csv файлу
+    # Читання csv файлу
     with open(csv_filename, 'r', encoding = 'utf-8') as csv_file:
         csv_data = list(csv.DictReader(csv_file))
 
     # Додавання нових рядків
     csv_data.append({"Ім'я": "Євгенія", "Прізвище": "Зуєва", "Вік": 18, "День народження": "--.--.----"})
 
-    # Запис у .json файл
+    # Запис у json файл
     with open(json_filename, 'w', encoding = 'utf-8') as json_file:
         json.dump(csv_data, json_file, ensure_ascii = False, indent = 2)
 
