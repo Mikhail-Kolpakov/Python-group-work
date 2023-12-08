@@ -35,7 +35,7 @@ try:
         json_data = json.load(json_file)
         
     # Додаємо нові дані
-    json_data.append({"Ім'я": "Назарій", "Прізвище": "Пось", "Вік": 18, "День народження": "10.04.2005"})
+    json_data.append({"Ім'я": "Назарій", "Прізвище": "Пось", "Вік": 18, "День народження": "10.04.05"})
     
     # Запис у csv файл
     with open(csv_filename, 'w', newline = '', encoding = 'utf-8') as csv_file:
@@ -54,7 +54,7 @@ try:
         csv_data = list(csv.DictReader(csv_file))
 
     # Додаємо нові дані
-    csv_data.append({"Ім'я": "Сергій", "Прізвище": "Гордієнко", "Вік": 18, "День народження": "--.--.----"})
+    csv_data.append({"Ім'я": "Сергій", "Прізвище": "Гордієнко", "Вік": 18, "День народження": "--.--.--"})
 
     # Запис у json файл
     with open(json_filename, 'w', encoding='utf-8') as json_file:
@@ -71,7 +71,7 @@ try:
         json_data = json.load(json_file)
 
     # Додаємо нові дані
-    json_data.append({"Ім'я": "Ганна", "Прізвище": "Волошко", "Вік": 18, "День народження": "--.--.----"})
+    json_data.append({"Ім'я": "Ганна", "Прізвище": "Волошко", "Вік": 18, "День народження": "--.--.--"})
 
     # Запис у csv файл
     with open(csv_filename, 'w', newline = '', encoding = 'utf-8') as csv_file:
@@ -90,7 +90,7 @@ try:
         csv_data = list(csv.DictReader(csv_file))
 
     # Додавання нових рядків
-    csv_data.append({"Ім'я": "Євгенія", "Прізвище": "Зуєва", "Вік": 18, "День народження": "--.--.----"})
+    csv_data.append({"Ім'я": "Євгенія", "Прізвище": "Зуєва", "Вік": 18, "День народження": "--.--.--"})
 
     # Запис у json файл
     with open(json_filename, 'w', encoding = 'utf-8') as json_file:
